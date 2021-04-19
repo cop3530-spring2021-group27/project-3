@@ -700,9 +700,10 @@ int main()
 				Patient* p = patients[i];
 				table << p->patientName << p->patientID << p->patientBday << p->ddimerValue << p->sodiumLevel << p->potassiumLevel << p->priorityValue << fort::endr;
 			}
-			if (fileOut) 
+			if (fileOut) {
 				file << table.to_string() << endl;
 				cout << "File saved." << endl << endl;
+			}
 			else
 				cout << table.to_string() << endl;
 		}
@@ -720,9 +721,10 @@ int main()
 					Patient* p = patientsT[i];
 					table << p->patientName << p->patientID << p->patientBday << p->ddimerValue << p->sodiumLevel << p->potassiumLevel << p->priorityValue << fort::endr;
 				}
-				if (fileOut) 
+				if (fileOut) {
 					file << table.to_string() << endl;
 					cout << "File saved." << endl << endl;
+				}
 				else 
 					cout << table.to_string() << endl;
 			}
@@ -733,9 +735,10 @@ int main()
 				Patient* p = m[patientID];
 				//the patient we want to display should be in p
 				table << p->patientName << p->patientID << p->patientBday << p->ddimerValue << p->sodiumLevel << p->potassiumLevel << p->priorityValue << fort::endr;
-				if (fileOut) 
+				if (fileOut) {
 					file << table.to_string() << endl;
 					cout << "File saved." << endl << endl;
+				}
 				else
 					cout << table.to_string() << endl; 	
 			}
